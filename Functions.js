@@ -17,6 +17,20 @@ setInterval(
         console.log('Alhamdulillah')
     }, 5000
 )
+let promise =new Promise((resolve, reject) => {
+    let v1 = 1, v2 = 1;
+    if(v1+v2 == 2){
+        resolve("Success")
+    }else{
+        reject("Failed")
+    }
+})
+
 user();
 user1('Mohammed Aslam');
 sumoftwo(1,2);
+promise.then((message)=>{
+    console.log(message);
+}).catch((message)=>{
+    console.log(message);
+})
