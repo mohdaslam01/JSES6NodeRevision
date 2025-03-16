@@ -26,6 +26,7 @@ let promise =new Promise((resolve, reject) => {
     }
 })
 
+
 user();
 user1('Mohammed Aslam');
 sumoftwo(1,2);
@@ -34,3 +35,11 @@ promise.then((message)=>{
 }).catch((message)=>{
     console.log(message);
 })
+console.log(__dirname)
+console.log(__filename)
+//modules are of three types
+/* 1. Core Modules
+    2. Local Modules
+     3. Third Party Modules */
+var uid = "Nodejs"
+module.exports.x=uid
